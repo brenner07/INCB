@@ -45,6 +45,8 @@ header .nav {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+  display: flex;
+  justify-content: flex-end;
 }
 
 header .nav .menu {
@@ -61,6 +63,7 @@ header .ham{
 }
 
 header .nav .menu ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,15 +267,7 @@ footer .foot .derechos{
 
   header .nav .menu ul {
     width: 100%;
-    justify-content: space-around;
-  }
-
-  header .nav .menu ul li {
-    margin: 0px;
-  }
-
-  header .nav .menu ul .selected {
-    margin: 0px;
+    justify-content: space-between;
   }
 
   section .incb h1 {
