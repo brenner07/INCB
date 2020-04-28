@@ -352,7 +352,7 @@ footer .foot .derechos{
     }
 
     .categorias .titulo{
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .categorias .bto{
@@ -370,7 +370,7 @@ footer .foot .derechos{
 
 @media screen and (max-width: 320px){
     .categorias .titulo{
-        font-size:27px;
+        font-size: 25px;
     }
 
     footer .direccion {
