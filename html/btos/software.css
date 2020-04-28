@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://i.imgur.com/iPjjTZq.jpg') no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.contenedorMenu{
+    display: none;
+}
+
+.contenedorMenu .ham{
+    display: none;
+}
+
+  /* *** MENU *** */
+.nav {
+    width: 100%;
+    padding: 2% 5% 1.5% 5%;
+    top: 0;
+    background: rgba(61, 113, 159, .97);
+    position: fixed;
+    box-shadow: 0px 1px 15px #000;
+}
+
+.nav .menu {
+    max-width: 1500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.menu ul li {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px 25px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav .menu ul li:hover {
+    border-bottom: 2px solid rgba(250, 250, 250, .6);
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.nav .menu ul li:hover .icono {
+    height: 18px;
+}
+
+.nav .menu ul li a {
+    color: #fff;
+}
+
+.nav .menu ul li a .icono {
+    margin: 0px 3px;
+    height: 16px;
+}
+
+.nav .menu ul .selected {
+    border-bottom: 2px solid rgba(250, 250, 250, .6);
+    margin: 0px 18px;
+    color:#fff;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.nav .menu ul .selected .icono {
+    height: 18px;
+}
+
+.nav .menu ul .quienes:hover {
+    margin: 0px 18px 0px 18.5px;
+}
+
+main{
+    margin: 100px auto 5px auto;
+    display: flex;
+    width: 90%;
+    max-width: 1500px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+main h1{
+    font-size: 50px;
+    font-family: 'Bebas';
+}
+
+main h3, main h4, main h5{
+    color: #3D719F;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    margin: 15px auto;
+}
+
+main h3{
+    font-size: 30px;
+}
+
+main p{
+    margin-bottom: 10px;
+}
+
+main li{
+    margin-bottom: 15px;
+}
+
+main .contenido{
+    width: 70%;
+    padding: 2%;
+    background: #fff;
+}
+
+main .contenido .portada{
+    display: block;
+    width: 100%;
+}
+
+main .contenido .portada img{
+    width: 100%;
+}
+
+main ul li h2{
+    background: #3D719F;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Bebas';
+    padding: 5px;
+    margin: 10px -3px;
+}
+
+main .listaCamposAccion{
+    text-align: left;
+}
+
+main .listaCamposAccion li{
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+main .contenido .listaCompetencia{
+    text-align: left;
+}
+
+main .contenido .listaCompetencia li{
+    list-style: decimal;
+}
+
+aside{
+    width: 30%;
+    background: #3D719F;
+    padding: 2%;
+}
+
+aside h3{
+    color:#fff;
+}
+
+aside table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+    margin-bottom: 50px;
+}
+
+aside table td{
+    border: 2px solid #000;
+    background:#fff;
+    padding: 5px;
+}
+
+
+
+aside table .color{
+    background:#f9a03f;
+    padding: 5px 0px;
+    font-style: inherit;
+}
+
+aside table .principal{
+    font-size: 25px;
+}
+
+    /* *** FOOTER *** */
+footer {
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+footer .direccion {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 1px;
+}
+
+footer .foot {
+    background: #3D719F;
+    padding: 5px 0px;
+    margin: 0;
+    width: 100%;
+}
+
+footer .foot .enlaces{
+    width: 80%;
+    max-width: 900px;
+    margin: 0px auto;
+    color: #fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+footer .foot .enlaces .telefono{ order: 1;}
+footer .foot .enlaces .correo{ order: 2;}
+footer .foot .enlaces .face{ order: 3;}
+
+footer .foot .enlaces article , .foot .enlaces article a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .foot .enlaces a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .foot .enlaces article .logo{
+    width: 20px;
+    margin-right: 5px;
+}
+
+footer .foot .derechos{
+    margin-top: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .nav .menu {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .nav .menu ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav .menu ul li {
+        margin: 0px;
+    }
+
+    .nav .menu ul .selected {
+        margin: 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .contenido{
+        width: 100%;
+    }
+
+    main .contenido h1{
+        font-size: 25px;
+    }
+
+    main .contenido h2{
+        font-size: 20px;
+    }
+
+    main .contenido h3, .contenido h4, .contenido h5{
+        font-size: 17px;
+    }
+
+    main aside{
+        width: 100%;
+    }
+
+    main aside h3{
+        font-size: 20px;
+    }
+
+    footer .foot .enlaces{
+        width: 100%;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        }
+    }
+
+@media screen and (max-width: 480px){
+    .contenedorMenu{
+        top: 0;
+        width: 100vw;
+        display: block;
+        z-index: 3;
+        background: rgba(61, 113, 159, .97);
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 15px #000;
+    }
+
+    .contenedorMenu .incb{
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+    }
+    .contenedorMenu .incb .cabeza{
+        width: 25px;
+    }
+    .contenedorMenu .incb h6{
+        font-size: 23px;
+        font-family: 'Bebas';
+        margin-left: 5px;
+        color: #fff;
+    }
+
+    .contenedorMenu .ham{
+        top: 0;
+        right: 0;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+        padding: 8px;
+        position: fixed;
+    }
+
+    .contenedorMenu .ham .bar{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav{
+        left: -100vw;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        background: rgba(61, 113, 159,.9);
+        z-index: 2;
+        transition: .3s;
+        box-shadow: 0px 0px 0px #000;
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
+    .nav .menu {
+        padding: 2% 2%;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+
+    .nav .menu ul{
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .nav .menu ul .selected {
+        border-bottom: 3px solid rgba(250, 250, 250, .6);
+        margin: 10px 0px;
+        padding-bottom: 3px;
+        font-size: 28px;
+    }
+
+    .nav .menu ul li {
+        font-size: 25px;
+        margin: 10px 0px;
+        margin-bottom: 3px;
+        padding-bottom: 3px solid transparent;
+    }
+
+    .nav .menu ul .selected .icono{
+        height: 27px;
+    }
+
+    .nav .menu ul li .icono,
+    .nav .menu ul li a .icono{
+        height: 25px;
+    }
+
+    .nav .menu ul li:hover {
+        font-size: 27px;
+    }
+
+    .nav .menu ul li:hover .icono {
+        height: 27px;
+    }
+
+    main{
+        margin: 70px auto 5px auto;
+    }
+
+    footer .foot {
+        padding: 5px 15%;
+    }
+
+    footer .foot .enlaces .telefono{order: 1;}
+    footer .foot .enlaces .correo{order: 3;}
+    footer .foot .enlaces .face{order: 2;}
+}
+
+@media screen and (max-width: 320px){
+    footer .direccion {
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+}
